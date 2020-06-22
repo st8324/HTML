@@ -510,11 +510,168 @@ body{
    vertical-align: top;
    background-position: -458px -175px;
 }
+.box-serivce-check{
+    font-size: 13px;
+    line-height: 26px;
+    display: flex;
+    cursor: default;
+}
+.box-serivce-check>input{
+    display: none;
+}
+.icon-check{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 4px 9px 0 0;
+    vertical-align: top;
+    background-position: -43px -404px;
+}
+.icon-check.checked{
+    background-position: -22px -404px;
+}
+.btn-service-save,
+.btn-service-init{
+    display: inline-block;
+    margin-left: 3px;
+    padding: 7px 13px 5px;
+    border: 1px solid #dae1e6;
+    border-radius: 15px;
+    background-color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+}
+.btn-service-init::before{
+    display: inline-block;
+    width: 10px;
+    height: 13px;
+    margin-right: 6px;
+    content: '';
+    vertical-align: top;
+    background-position: -458px -157px;
+}
+.btn-service-save{
+    background-color: #19ce60;
+    border-color: #00c73c;
+    color: #fff;
+}
+.box-service-menu.set{
+    text-align: right;
+}
+.box-menu-black.box-empty{
+    width: 68px;
+    height: 28px;
+    border: 1px solid #dae1e6;
+    border-radius: 2px;
+    background-color: #f7f9fa;
+    margin-left: 8px;
+    float: left;
+}
+.box-menu-black.box-empty:first-of-type{
+    margin-left: 18px;
+}
+.box-menu-black.box-empty.select{
+    border-color: #19ce60;
+    background-color: #fff;
+}
 /* 컨텐츠 관련 css */
 .box-container-contents{
     height: 2685px;
-    background-color: yellow;
 }
+.box-left{
+    width: 750px;
+    float: left;
+    background-color: yellow;
+    height: 1000px;
+    padding: 20px 0;
+}
+.box-left1{
+    height: 135px;
+    margin-bottom: 12px;
+}
+.box-left1>a{
+    display: block;
+}
+.box-left2{
+    padding: 12px 15px 11px 15px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+}
+.box-issue-area{
+    float: left;
+}
+box-direct-area{
+    float: right;
+}
+.link-media{
+    font-size: 13px;
+    font-weight: bold;
+    float: left;
+    margin-right: 7px;
+    line-height: 24px;
+    letter-spacing: -.2px;
+}
+.link-media::after{
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    margin: 07px 0 0 6px;
+    content: '';
+    vertical-align: top;
+    background-position: -417px -90px;
+}
+.box-rolling-newslist{
+    width: 310px;
+    float: left;
+    height: 24px;;
+    overflow: hidden;
+}
+.box-rolling-news{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    /* 글이 2줄이상이 되어야하는 경우 한줄로 유지할 때 nowrap */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    line-height: 24px;
+}
+.box-direct-area{
+    float: right;
+}
+.link-news{
+    font-size: 13px;
+    float: left;
+    line-height: 24px;
+    color: #3565c9;
+    font-weight: bold;
+}
+.link-news::after{
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin-left: 8px;
+    vertical-align: 3px;
+    border-radius: 50%;
+    background-color: #c8ccd1;
+    content: '';
+}
+.link-direct{
+    font-size: 13px;
+    float: left;
+    line-height: 24px;
+    font-weight: bold;
+    color: #202020;
+    margin: 0 4px 0 7px;
+}
+.box-right{
+    width: 350px;
+    float: right;
+    background-color: green;
+    height: 1000px;
+    padding: 20px 0;
+}
+/* 푸터 관련 css */
 .box-container-footer{
     height: 423px;
     background-color: rgb(250, 251, 252);
@@ -525,6 +682,8 @@ body{
 .btn-keyword::after,
 .link-more::after,
 .btn-menu-set::before,
+.btn-service-init::before,
+.link-media::after,
 .bg-44265f{
     background-image: url(https://s.pstatic.net/static/www/img/uit/2020/sp_main.44265f.png);
     background-repeat: no-repeat;
@@ -536,6 +695,7 @@ body{
 
 .box-container-green::after,
 .box-container-black::after,
+.box-left2::after,
 .box-auto-down::after{
     clear: both;
     content: '';
